@@ -1,3 +1,5 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 const initialState = [
   {
     id: 1,
@@ -6,7 +8,7 @@ const initialState = [
     gender: "female",
     size: ["50ml", "100ml"],
     productImg1: [require("../img/perfume001_1")],
-    productImg1: [require("../img/perfume001_2")],
+    productImg2: [require("../img/perfume001_2")],
     price1: 179000,
     price2: 255000,
     checkSale: false,
@@ -21,7 +23,7 @@ const initialState = [
     gender: "female",
     size: ["50ml", "100ml"],
     productImg1: [require("../img/perfume002_1")],
-    productImg1: [require("../img/perfume002_2")],
+    productImg2: [require("../img/perfume002_2")],
     price1: 179000,
     price2: 255000,
     checkSale: false,
@@ -37,7 +39,7 @@ const initialState = [
     gender: "female",
     size: ["50ml", "100ml"],
     productImg1: [require("../img/perfume003_1")],
-    productImg1: [require("../img/perfume003_2")],
+    productImg2: [require("../img/perfume003_2")],
     price1: 182000,
     price2: 262000,
     checkSale: false,
@@ -52,7 +54,7 @@ const initialState = [
     gender: "female",
     size: ["50ml", "90ml"],
     productImg1: [require("../img/perfume004_1")],
-    productImg1: [require("../img/perfume004_2")],
+    productImg2: [require("../img/perfume004_2")],
     price1: 213000,
     price2: 289000,
     checkSale: false,
@@ -67,7 +69,7 @@ const initialState = [
     gender: "male",
     size: ["60ml", "100ml"],
     productImg1: [require("../img/perfume005_1")],
-    productImg1: [require("../img/perfume005_2")],
+    productImg2: [require("../img/perfume005_2")],
     price1: 122000,
     price2: 168000,
     checkSale: false,
@@ -82,7 +84,7 @@ const initialState = [
     gender: "male",
     size: ["50ml", "90ml"],
     productImg1: [require("../img/perfume006_1")],
-    productImg1: [require("../img/perfume006_2")],
+    productImg2: [require("../img/perfume006_2")],
     price1: 161000,
     price2: 225000,
     checkSale: false,
@@ -97,7 +99,7 @@ const initialState = [
     gender: "male",
     size: ["60ml", "100ml"],
     productImg1: [require("../img/perfume007_1")],
-    productImg1: [require("../img/perfume007_2")],
+    productImg2: [require("../img/perfume007_2")],
     price1: 126000,
     price2: 177000,
     checkSale: false,
@@ -112,7 +114,7 @@ const initialState = [
     gender: "male",
     size: ["50ml", "100ml"],
     productImg1: [require("../img/perfume008_1")],
-    productImg1: [require("../img/perfume008_2")],
+    productImg2: [require("../img/perfume008_2")],
     price1: 158000,
     price2: 220000,
     checkSale: false,
@@ -128,7 +130,7 @@ const initialState = [
     gender: undefined,
     size: ["50ml", "100ml"],
     productImg1: [require("../img/perfume009_1")],
-    productImg1: [require("../img/perfume009_2")],
+    productImg2: [require("../img/perfume009_2")],
     price1: 155000,
     price2: 218000,
     checkSale: false,
@@ -143,7 +145,7 @@ const initialState = [
     gender: undefined,
     size: ["50ml", "100ml"],
     productImg1: [require("../img/perfume010_1")],
-    productImg1: [require("../img/perfume010_2")],
+    productImg2: [require("../img/perfume010_2")],
     price1: 155000,
     price2: 218000,
     checkSale: false,
@@ -158,7 +160,7 @@ const initialState = [
     gender: undefined,
     size: ["35ml", "70ml"],
     productImg1: [require("../img/perfume011_1")],
-    productImg1: [require("../img/perfume011_2")],
+    productImg2: [require("../img/perfume011_2")],
     price1: 173000,
     price2: 273000,
     checkSale: false,
@@ -169,11 +171,11 @@ const initialState = [
   {
     id: 12,
     brand: "로에베",
-    name: "맨 오 드 뚜왈렛",
+    name: "001 맨 오 드 뚜왈렛",
     gender: undefined,
     size: ["50ml", "100ml"],
     productImg1: [require("../img/perfume012_1")],
-    productImg1: [require("../img/perfume012_2")],
+    productImg2: [require("../img/perfume012_2")],
     price1: 148000,
     price2: 196000,
     checkSale: false,
@@ -182,3 +184,13 @@ const initialState = [
     clickCount: 1,
   },
 ];
+
+export const productBox = createSlice({
+  name: "productBox",
+  initialState,
+  reducers: {},
+});
+
+export const { CountPlus, CountMinuse } = productBox.actions;
+
+export default productBox.reducer;

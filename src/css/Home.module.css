@@ -1,0 +1,6 @@
+.main > img {
+  display: flex;
+  margin-top: 6.5%;
+  height: 68vh;
+  width: 100vw;
+}

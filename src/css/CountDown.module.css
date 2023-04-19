@@ -1,0 +1,13 @@
+.count {
+  margin-top: 50px;
+  font-size: xx-large;
+  text-align: center;
+  color: blueviolet;
+}
+
+.count > img {
+  text-align: center;
+  margin-top: 10px;
+  width: 500px;
+  height: 430px;
+}
