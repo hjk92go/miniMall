@@ -3,65 +3,72 @@ import styles from "../css/CountDown.module.css";
 
 const CountDown = () => {
   //카운트다운 데드라인
-  const deadLine = new Date("2023-05-05");
+  const deadLine = new Date("2023-04-24T13:54:25+0900");
   //현재 시간
-  const date = new Date();
+  const now = new Date();
   //남은 시간 구하기
-  const time = deadLine.getTime() - date.getTime();
-  console.log("time", time);
-  //1분 계산식
-  const min1 = 1000 * 60;
+  const time = deadLine.getTime() - now.getTime();
+  //1분
+  const oneMin = 1000 * 60;
 
-  const d = Math.floor(time / (min1 * 60 * 24));
-  const h = Math.floor((time % (min1 * 60 * 24)) / (min1 * 60));
-  const m = Math.floor((time % (min1 * 60)) / min1);
-  const s = Math.floor((time % min1) / 1000);
+  const h = Math.floor(time / (oneMin * 60 * 24));
+  const m = Math.floor((time % (oneMin * 60 * 24)) / (oneMin * 60));
+  const d = Math.floor((time % (oneMin * 60)) / oneMin);
+  const s = Math.floor((time % oneMin) / 1000);
 
-  const [day, setDay] = useState(d);
-  const [hour, setHour] = useState(h - 9); //표준시와 9시간 차이
-  const [sec, setSec] = useState(s);
-  const [min, setMin] = useState(m);
-  console.log(min, "min");
+  const [day, setDay] = useState(h);
+  const [hour, setHour] = useState(m);
+  const [min, setMin] = useState(d);
+  const [sec, sestSec] = useState(s);
 
   useEffect(() => {
-    const Timer = setInterval(() => {
-      setSec((sec) => sec - 1);
-    }, 1000);
-    if (sec === 0) {
-      if (min === 0) {
-        if (hour === 0) {
-          if (day === 0) {
-            clearInterval(Timer);
+    const timer = setInterval(() => {
+      if (parseInt(sec) > 0) sestSec(parseInt(sec) - 1);
+
+      if (parseInt(sec) === 0) {
+        if (parseInt(min) === 0) {
+          if (parseInt(hour) === 0) {
+            if (parseInt(day) === 0) {
+              clearInterval(timer);
+            } else {
+              setDay(parseInt(day) - 1);
+              setHour(23);
+              setMin(59);
+              sestSec(59);
+            }
           } else {
-            setDay(day - 1);
-            setHour(23);
+            setHour(parseInt(hour) - 1);
             setMin(59);
-            setSec(59);
+            sestSec(59);
           }
-          setHour(hour - 1);
-          setMin(59);
-          setSec(59);
+        } else {
+          setMin(parseInt(min) - 1);
+          sestSec(59);
         }
-      } else {
-        setMin(min - 1);
-        setSec(59);
       }
-    }
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [day, hour, min, sec]);
 
-    return () => clearInterval(Timer);
-  }, [sec, min, hour, day]);
-
-  const padhour = String(hour).padStart(2, "0");
-  const padMin = String(min).padStart(2, "0");
-  const padSec = String(sec).padStart(2, "0");
+  //판매종료 조건
+  const stop = sec <= 0 && min <= 0 && hour <= 0 && day <= 0;
 
   return (
     <div className={styles.count}>
       <div>오늘의 특가</div>
-      <div className={styles.countDay}>
-        {day}일:{padhour}:{padMin}:{padSec}
-      </div>
-      <img src={require("../img/perfume004_1.jpg")} />
+
+      {stop ? (
+        <h1>판매종료되었습니다</h1>
+      ) : (
+        <div>
+          <div id="end" className={styles.countDay}>
+            지금구매하러가기
+            <br />
+            {day}일:{hour}:{min}:{sec}
+          </div>
+        </div>
+      )}
+      <img src={require("../img/perfume002_1.jpg")} />
     </div>
   );
 };

@@ -186,11 +186,11 @@ const initialState = [
 ];
 
 export const productBox = createSlice({
-  name: "productBox",
+  name: "box",
   initialState,
   reducers: {},
 });
 
-export const { CountPlus, CountMinuse } = productBox.actions;
+export const {} = productBox.actions;
 
 export default productBox.reducer;
