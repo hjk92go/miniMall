@@ -1,13 +1,27 @@
-.count {
+.countDay {
   margin-top: 50px;
-  font-size: xx-large;
   text-align: center;
-  color: blueviolet;
 }
 
-.count > img {
-  text-align: center;
-  margin-top: 10px;
+.saleimg {
   width: 500px;
-  height: 430px;
+  height: 500px;
+}
+
+.title {
+  font-size: xxx-large;
+  font-weight: bold;
+  color: rgba(216, 16, 16, 0.848);
+}
+.count {
+  font-size: xxx-large;
+  font-weight: bold;
+}
+.end {
+  color: rgba(0, 0, 0, 0.308);
+  font-size: x-large;
+}
+.text {
+  color: rgba(0, 0, 0, 0.308);
+  font-size: x-large;
 }

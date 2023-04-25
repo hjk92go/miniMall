@@ -3,7 +3,7 @@ import styles from "../css/CountDown.module.css";
 
 const CountDown = () => {
   //카운트다운 데드라인
-  const deadLine = new Date("2023-04-24T13:54:25+0900");
+  const deadLine = new Date("2023-04-25T22:52:25+0900");
   //현재 시간
   const now = new Date();
   //남은 시간 구하기
@@ -53,22 +53,27 @@ const CountDown = () => {
   //판매종료 조건
   const stop = sec <= 0 && min <= 0 && hour <= 0 && day <= 0;
 
-  return (
-    <div className={styles.count}>
-      <div>오늘의 특가</div>
+  const padhour = String(hour).padStart(2, "0");
+  const padMin = String(min).padStart(2, "0");
+  const padSec = String(sec).padStart(2, "0");
 
+  return (
+    <div className={styles.countDay}>
+      <div className={styles.title}>오늘의 특가</div>
       {stop ? (
-        <h1>판매종료되었습니다</h1>
+        <div className={styles.end}>판매종료되었습니다</div>
       ) : (
         <div>
-          <div id="end" className={styles.countDay}>
-            지금구매하러가기
-            <br />
-            {day}일:{hour}:{min}:{sec}
+          <div className={styles.count}>
+            {padhour}:{padMin}:{padSec}
           </div>
+          <img
+            className={styles.saleimg}
+            src={require("../img/perfume002_1.jpg")}
+          />
+          <div className={styles.text}>지금구매하러가기</div>
         </div>
       )}
-      <img src={require("../img/perfume002_1.jpg")} />
     </div>
   );
 };

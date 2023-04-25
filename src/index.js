@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 
 //store_index.js
 import { Provider } from "react-redux";
-import store from "../src/data/store.js";
+import store from "./data/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
