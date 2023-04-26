@@ -5,11 +5,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useCallback, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const ImgSlick = () => {
   const settings = {
     slidesToShow: 4,
-    slidesToScroll: 4,
     centerMode: true,
     autoplayspeed: 1000,
     auseOnHover: true,
@@ -32,7 +32,12 @@ const ImgSlick = () => {
       <Slider className={styles.mainSlick} ref={slickRef} {...settings}>
         {goods.map((product) => (
           <div className={styles.mainImg}>
-            <img src={require(`../img/${product.productImg1}`)}></img>
+            <Link to={`/goods/${product.id}`}>
+              <img
+                className={styles.mainImg}
+                src={require(`../img/${product.productImg1}`)}
+              ></img>
+            </Link>
             <div className={styles.info}>
               [&nbsp;{product.brand}&nbsp;] {product.name}
               &nbsp;{product.size[0]}

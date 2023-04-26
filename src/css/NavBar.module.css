@@ -10,6 +10,7 @@
   background-color: #ecdbdba1;
   justify-content: space-evenly;
   align-items: center;
+  font-weight: bold;
 }
 .search {
   width: 300px;

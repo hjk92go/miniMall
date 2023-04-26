@@ -59,17 +59,24 @@ const CountDown = () => {
 
   return (
     <div className={styles.countDay}>
-      <div className={styles.title}>오늘의 특가</div>
       {stop ? (
-        <div className={styles.end}>판매종료되었습니다</div>
+        <div className={styles.wrapp}>
+          <img
+            className={styles.endimg}
+            src={require("../img/perfume005_1.jpg")}
+          />
+          <div className={styles.end}>판매 종료</div>
+        </div>
       ) : (
-        <div>
+        <div className={styles.set}>
           <div className={styles.count}>
-            {padhour}:{padMin}:{padSec}
+            {padhour}&nbsp;
+            {padMin}&nbsp;
+            {padSec}
           </div>
           <img
             className={styles.saleimg}
-            src={require("../img/perfume002_1.jpg")}
+            src={require("../img/perfume005_1.jpg")}
           />
           <div className={styles.text}>지금구매하러가기</div>
         </div>

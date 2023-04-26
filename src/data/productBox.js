@@ -105,13 +105,13 @@ const initialState = [
   {
     id: 5,
     brand: "디올",
-    name: "소바쥬 오 드 뚜왈렛",
+    name: "디올 옴므 오 드 뚜왈렛",
     gender: "male",
-    size: ["60ml", "100ml"],
+    size: ["50ml", "100ml"],
     sizeNprice: [
       {
-        size: "60ml",
-        price: "122,000",
+        size: "50ml",
+        price: "120,000",
       },
       {
         size: "100ml",
@@ -120,11 +120,11 @@ const initialState = [
     ],
     productImg1: "perfume005_1.jpg",
     productImg2: "perfume005_2.jpg",
-    price1: "122,000",
+    price1: "120,000",
     price2: "168,000",
     checkSale: false,
-    info: "소바쥬는 사막의 태양 아래 펼쳐진 하얗게 불타는 대지와 그 위를 드리운 끝없는 푸른 하늘, 그 광활한 자연에서 영감을 얻어 탄생했습니다.",
-    Note: "베르가못, 마린 우디",
+    info: "디올 옴므는 현대 남성의 다채로운 모습을 담아내었습니다. 남성미가 넘치는 시그니처 향뿐만 아니라 강인함과 부드러움이 교차하는 부드럽고 센슈얼한 느낌도 함께 선사합니다.",
+    Note: "아틀라스 시더, 아이티산 베디버, 우디",
     clickCount: 4,
   },
   {

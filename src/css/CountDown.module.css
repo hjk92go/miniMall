@@ -1,27 +1,50 @@
 .countDay {
-  margin-top: 50px;
   text-align: center;
+  background-image: url(../img/background.jpg);
+  background-size: 100%;
 }
 
 .saleimg {
   width: 500px;
   height: 500px;
 }
-
+.endimg {
+  width: 470px;
+  height: 500px;
+  filter: brightness(60%);
+}
 .title {
   font-size: xxx-large;
   font-weight: bold;
   color: rgba(216, 16, 16, 0.848);
 }
 .count {
-  font-size: xxx-large;
+  font-size: 82px;
   font-weight: bold;
+  background-image: url(../img/time.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 18.2%;
+  color: white;
 }
 .end {
-  color: rgba(0, 0, 0, 0.308);
+  color: rgba(0, 0, 0, 0.404);
   font-size: x-large;
 }
 .text {
   color: rgba(0, 0, 0, 0.308);
   font-size: x-large;
+}
+
+.sale {
+  width: 350px;
+  height: 150px;
+}
+
+.countDay .set {
+  padding-top: 7%;
+}
+
+.wrapp {
+  padding-top: 9%;
 }

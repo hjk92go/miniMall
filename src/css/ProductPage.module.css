@@ -1,9 +1,120 @@
-img {
+.info > img {
   margin: auto 0px;
-  width: 400px;
-  height: 350px;
+  width: 600px;
+  height: 500px;
 }
 .info {
-  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.textbox {
+  margin-left: 2%;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.order {
+  font-size: large;
+  height: 40px;
+  width: 400px;
+}
+.cart {
+  font-size: large;
+  height: 40px;
+  width: 400px;
+  margin-top: 1%;
+}
+.sizeBtn {
+  font-size: large;
+  height: 40px;
+  width: 110px;
+  margin-top: 2px;
+  margin-left: 3%;
+}
+.checkcheck {
+  font-size: large;
+  height: 40px;
+  width: 110px;
+  margin-top: 2px;
+  margin-left: 3%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.836);
+}
+
+.sizeBtn2 {
+  justify-items: center;
+  display: flex;
+}
+.sizeBtn2 > button {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+.sizeBtn2 > button:hover {
+  background-color: rgba(0, 0, 0, 0.836);
+  color: white;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: none;
+  cursor: pointer;
+}
+.btn > button {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  color: rgba(0, 0, 0, 0.712);
+}
+.btn > button:hover {
+  background-color: rgba(0, 0, 0, 0.836);
+  color: white;
+}
+.border {
+  border-bottom: 1px solid black;
+  width: 400px;
+}
+.perfumeInfo {
+  width: 400px;
+  font-size: medium;
+}
+.name {
+  width: 400px;
+  font-weight: bold;
+}
+.sizetext {
+  display: flex;
+  font-size: medium;
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  display: flex;
+  font-size: medium;
+  justify-content: space-between;
+}
+.cost {
+  font-size: small;
+}
+
+.wrapped {
+  margin-top: 30px;
+}
+.container {
+  max-width: 53vw;
+  margin: 0 auto;
+}
+
+.img2 {
+  width: 80%;
+  margin: 30px 10%;
+}
+
+.note {
+  margin-top: 100px;
   text-align: center;
 }
