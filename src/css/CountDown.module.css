@@ -1,7 +1,12 @@
-.countDay {
+.title {
+  font-size: xxx-large;
+  font-weight: bold;
   text-align: center;
-  background-image: url(../img/background.jpg);
-  background-size: 100%;
+  margin-top: 5%;
+}
+.subTitle {
+  text-align: center;
+  font-size: large;
 }
 
 .saleimg {
@@ -19,12 +24,14 @@
   color: rgba(216, 16, 16, 0.848);
 }
 .count {
-  font-size: 82px;
+  font-size: 81px;
   font-weight: bold;
   background-image: url(../img/time.png);
-  background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: 55%;
+
   background-repeat: no-repeat;
-  background-size: 18.2%;
+  background-size: 18%;
   color: white;
 }
 .end {
@@ -41,10 +48,14 @@
   height: 150px;
 }
 
-.countDay .set {
-  padding-top: 7%;
+.set {
+  text-align: center;
+}
+.count {
+  margin-top: -10px;
 }
 
 .wrapp {
-  padding-top: 9%;
+  text-align: center;
+  margin: 30px auto 0;
 }

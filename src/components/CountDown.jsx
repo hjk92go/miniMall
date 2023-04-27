@@ -3,7 +3,7 @@ import styles from "../css/CountDown.module.css";
 
 const CountDown = () => {
   //카운트다운 데드라인
-  const deadLine = new Date("2023-04-25T22:52:25+0900");
+  const deadLine = new Date("2023-04-27T18:38:25+0900");
   //현재 시간
   const now = new Date();
   //남은 시간 구하기
@@ -59,6 +59,8 @@ const CountDown = () => {
 
   return (
     <div className={styles.countDay}>
+      <div className={styles.title}>SUPER SALE</div>
+      <div className={styles.subTitle}>망설이면 품절!</div>
       {stop ? (
         <div className={styles.wrapp}>
           <img
