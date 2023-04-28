@@ -1,0 +1,40 @@
+.basket {
+  text-align: center;
+  display: flex;
+  align-content: flex-end;
+  width: 80%;
+
+  border-bottom: 1px solid black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  /* margin-left: 5%; */
+}
+
+.list {
+  display: inline-block;
+}
+.sum {
+  background-color: antiquewhite;
+  width: 80%;
+  height: 70px;
+}
+
+.goods {
+  height: 300px;
+  width: 80%;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  /* margin: 0 auto; */
+}
+button {
+  width: 180px;
+  height: 60px;
+  /* margin: 5%; */
+}

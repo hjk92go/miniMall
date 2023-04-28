@@ -3,7 +3,7 @@ import styles from "../css/CountDown.module.css";
 
 const CountDown = () => {
   //카운트다운 데드라인
-  const deadLine = new Date("2023-04-27T18:38:25+0900");
+  const deadLine = new Date("2023-04-30T18:38:25+0900");
   //현재 시간
   const now = new Date();
   //남은 시간 구하기

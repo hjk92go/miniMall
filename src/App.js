@@ -10,7 +10,7 @@ import Login from "./pages/Login";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<NavBar />}>
