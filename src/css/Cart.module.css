@@ -1,40 +1,85 @@
-.basket {
-  text-align: center;
-  display: flex;
-  align-content: flex-end;
-  width: 80%;
-
-  border-bottom: 1px solid black;
-}
-
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 10%;
-  /* margin-left: 5%; */
+  margin: 0 auto;
+  margin-top: 170px;
+  width: 80%;
+}
+
+.basket {
+  /* padding-right: 5%; */
+  border-bottom: 2px solid black;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: xx-large;
 }
 
 .list {
-  display: inline-block;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  font-size: large;
+  justify-content: space-between;
 }
-.sum {
-  background-color: antiquewhite;
+.list > .two {
+  margin-left: 1%;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.list > .two > div {
+  width: 20%;
+}
+.list > .two > span {
   width: 80%;
-  height: 70px;
+  /* text-align: center; */
+  margin-left: 10%;
+}
+.list > .three {
+  margin-right: 1%;
+  display: flex;
+  width: 44%;
+  justify-content: space-around;
+}
+.list > .num {
+  width: 6%;
+  /* display: flex; */
+  /* justify-content: end; */
+  text-align: end;
 }
 
-.goods {
-  height: 300px;
-  width: 80%;
+.items {
+  border-bottom: 1px solid black;
+  min-height: 400px;
+}
+.sum {
+  border-bottom: 2px solid black;
 }
 .btns {
   display: flex;
-  justify-content: center;
-  /* margin: 0 auto; */
+  justify-content: space-evenly;
+  margin: 3% 0;
 }
-button {
-  width: 180px;
-  height: 60px;
-  /* margin: 5%; */
+.btns > a > button {
+  height: 70px;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  cursor: pointer;
+  font-size: large;
+}
+
+.btns > a > button:hover {
+  background-color: rgba(0, 0, 0, 0.836);
+  color: white;
+}
+
+.sum {
+  display: flex;
+  height: 100px;
+  font-size: x-large;
+  font-weight: bold;
+  align-items: center;
 }

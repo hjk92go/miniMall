@@ -12,7 +12,7 @@ const NavBar = () => {
           <input className={styles.search} placeholder="여기에 검색해주세요." />
         </li>
         <li>
-          <Link to="Cart">Cart</Link>
+          <Link to="cart">Cart</Link>
         </li>
         <li>MyPage</li>
       </div>
