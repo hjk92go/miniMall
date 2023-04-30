@@ -120,8 +120,12 @@
 }
 
 .faq {
-  font-size: xx-large;
+  font-size: medium;
   font-weight: bold;
-  text-align: center;
-  margin-top: 3%;
+  margin: 3% 0;
+}
+.kofaq {
+  font-size: xx-large;
+  display: flex;
+  justify-content: space-evenly;
 }

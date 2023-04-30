@@ -28,7 +28,8 @@
   margin-left: 1%;
   display: flex;
   width: 50%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
 }
 .list > .two > div {
   width: 20%;
@@ -43,6 +44,10 @@
   display: flex;
   width: 44%;
   justify-content: space-around;
+}
+.list > .trash {
+  text-align: center;
+  width: 5%;
 }
 .list > .num {
   width: 6%;
@@ -82,4 +87,9 @@
   font-size: x-large;
   font-weight: bold;
   align-items: center;
+}
+
+.two > img {
+  width: 75px;
+  height: 80px;
 }

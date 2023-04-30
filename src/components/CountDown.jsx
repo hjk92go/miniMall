@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import styles from "../css/CountDown.module.css";
+import { Link } from "react-router-dom";
 
 const CountDown = () => {
   //카운트다운 데드라인
-  const deadLine = new Date("2023-04-30T18:38:25+0900");
+  const deadLine = new Date("2023-05-30T00:00:00+0900");
   //현재 시간
   const now = new Date();
   //남은 시간 구하기
@@ -65,8 +66,9 @@ const CountDown = () => {
         <div className={styles.wrapp}>
           <img
             className={styles.endimg}
-            src={require("../img/perfume005_1.jpg")}
+            src={require(`../img/perfume005_1.jpg`)}
           />
+
           <div className={styles.end}>판매 종료</div>
         </div>
       ) : (
@@ -76,10 +78,12 @@ const CountDown = () => {
             {padMin}&nbsp;
             {padSec}
           </div>
-          <img
-            className={styles.saleimg}
-            src={require("../img/perfume005_1.jpg")}
-          />
+          <Link to={`/goods/5`}>
+            <img
+              className={styles.saleimg}
+              src={require("../img/perfume005_1.jpg")}
+            />
+          </Link>
           <div className={styles.text}>지금구매하러가기</div>
         </div>
       )}

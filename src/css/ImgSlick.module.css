@@ -28,42 +28,42 @@
 }
 
 .mainSlick {
-  position: relative;
 }
 .left {
   z-index: 10;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  text-align: center;
+  height: 370px;
+  width: 60px;
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  margin-top: 8.3%;
-  margin-left: 4%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.082);
-  font-size: xx-large;
-  font-weight: bold;
+  top: 0;
+  left: 0%;
+  color: #16053f81;
+  /* background-color: rgba(0, 0, 0, 0.082); */
   cursor: pointer;
 }
 .right {
   z-index: 10;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+  height: 370px;
+  width: 60px;
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  /* margin-top: -11%;
-  margin-left: 97%; */
-  margin-top: -14%;
-  margin-left: 93%;
-  color: white;
-  text-align: center;
+  top: 0;
+  right: 0%;
+  color: #16053f81;
+  /* background-color: rgba(0, 0, 0, 0.082); */
   cursor: pointer;
-  font-size: xx-large;
-  background-color: rgba(0, 0, 0, 0.082);
 }
 .left:hover {
+  color: white;
   background-color: rgba(0, 0, 0, 0.336);
 }
 .right:hover {
+  color: white;
   background-color: rgba(0, 0, 0, 0.336);
 }

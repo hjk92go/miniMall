@@ -17,8 +17,9 @@ const Cart = () => {
           <span className={styles.num}>수량</span>
           <div className={styles.three}>
             <span>판매가</span>
-            <span>할인액</span>
+            <span>할인가</span>
           </div>
+          <span className={styles.trash}>삭제</span>
         </div>
         {/* Date 넘겨온 값 */}
         <div className={styles.list}>
@@ -33,14 +34,15 @@ const Cart = () => {
             <span>판매가</span>
             <span>할인액</span>
           </div>
+          <span className={styles.trash}>삭제</span>
         </div>
         <div className={styles.sum}>총 구매금액</div>
         <div className={styles.btns}>
           <Link>
-            <button>더 둘러보기</button>
+            <button>선택 주문하기</button>
           </Link>
           <Link to="/login">
-            <button>주문 하기</button>
+            <button>전체 주문하기</button>
           </Link>
         </div>
       </div>

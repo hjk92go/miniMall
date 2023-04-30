@@ -122,7 +122,7 @@ const initialState = [
     productImg2: "perfume005_2.jpg",
     price1: "120,000",
     price2: "168,000",
-    checkSale: false,
+    checkSale: true,
     info: "디올 옴므는 현대 남성의 다채로운 모습을 담아내었습니다. 남성미가 넘치는 시그니처 향뿐만 아니라 강인함과 부드러움이 교차하는 부드럽고 센슈얼한 느낌도 함께 선사합니다.",
     Note: "아틀라스 시더, 아이티산 베디버, 우디",
     clickCount: 4,

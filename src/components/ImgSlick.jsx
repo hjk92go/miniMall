@@ -26,28 +26,30 @@ const ImgSlick = () => {
     <div>
       <div className={styles.title}>Best & Hot</div>
       <div className={styles.subTitle}>지금 가장 주목받는 향수!</div>
-      <div onClick={prevBtn} className={styles.left}>
-        ＜
-      </div>
-      <Slider className={styles.mainSlick} ref={slickRef} {...settings}>
-        {goods.map((product) => (
-          <div className={styles.mainImg}>
-            <Link to={`/goods/${product.id}`}>
-              <img
-                className={styles.mainImg}
-                src={require(`../img/${product.productImg1}`)}
-              ></img>
-            </Link>
-            <div className={styles.info}>
-              [&nbsp;{product.brand}&nbsp;] {product.name}
-              &nbsp;{product.size[0]}
+      <div style={{ position: "relative" }}>
+        <div onClick={prevBtn} className={styles.left}>
+          ＜
+        </div>
+        <Slider className={styles.mainSlick} ref={slickRef} {...settings}>
+          {goods.map((product) => (
+            <div className={styles.mainImg}>
+              <Link to={`/goods/${product.id}`}>
+                <img
+                  className={styles.mainImg}
+                  src={require(`../img/${product.productImg1}`)}
+                ></img>
+              </Link>
+              <div className={styles.info}>
+                [&nbsp;{product.brand}&nbsp;] {product.name}
+                &nbsp;{product.size[0]}
+              </div>
+              <div className={styles.price}>{product.price1}</div>
             </div>
-            <div className={styles.price}>{product.price1}</div>
-          </div>
-        ))}
-      </Slider>
-      <div onClick={nextBtn} className={styles.right}>
-        ＞
+          ))}
+        </Slider>
+        <div onClick={nextBtn} className={styles.right}>
+          ＞
+        </div>
       </div>
     </div>
   );
