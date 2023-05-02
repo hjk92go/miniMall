@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/miniMall/static/css/main.0b9d55d4.css",
-    "main.js": "/miniMall/static/js/main.64a1c036.js",
+    "main.css": "/miniMall/static/css/main.e5c44d28.css",
+    "main.js": "/miniMall/static/js/main.8440d645.js",
     "static/js/787.63703646.chunk.js": "/miniMall/static/js/787.63703646.chunk.js",
     "static/media/perfume006_2.jpg": "/miniMall/static/media/perfume006_2.606b738f8a60fdd5013c.jpg",
     "static/media/perfume004_2.jpg": "/miniMall/static/media/perfume004_2.f3e15a33ec8670933919.jpg",
@@ -36,12 +36,12 @@
     "static/media/slick.ttf": "/miniMall/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/miniMall/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/miniMall/index.html",
-    "main.0b9d55d4.css.map": "/miniMall/static/css/main.0b9d55d4.css.map",
-    "main.64a1c036.js.map": "/miniMall/static/js/main.64a1c036.js.map",
+    "main.e5c44d28.css.map": "/miniMall/static/css/main.e5c44d28.css.map",
+    "main.8440d645.js.map": "/miniMall/static/js/main.8440d645.js.map",
     "787.63703646.chunk.js.map": "/miniMall/static/js/787.63703646.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b9d55d4.css",
-    "static/js/main.64a1c036.js"
+    "static/css/main.e5c44d28.css",
+    "static/js/main.8440d645.js"
   ]
 }
