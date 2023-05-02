@@ -1,20 +1,28 @@
 import { Link, Outlet } from "react-router-dom";
 import styles from "../css/NavBar.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   return (
     <div>
       <div className={styles.bar}>
-        <li>
+        <div>
           <Link to="/">PerfumeTherapy</Link>
-        </li>
-        <li>
-          <input className={styles.search} placeholder="여기에 검색해주세요." />
-        </li>
-        <li>
-          <Link to="cart">Cart</Link>
-        </li>
-        <li>MyPage</li>
+        </div>
+        <div>
+          <Link to="product">Perfume</Link>
+        </div>
+        <div>
+          <Link to="cart">
+            <FontAwesomeIcon
+              className={styles.userIcon}
+              icon={faCartShopping}
+            />
+          </Link>
+        </div>
+        <FontAwesomeIcon className={styles.cartIcon} icon={faUser} />
       </div>
       <Outlet />
     </div>

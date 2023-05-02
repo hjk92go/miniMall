@@ -24,6 +24,8 @@
   color: rgba(216, 16, 16, 0.848);
 }
 .count {
+  /* font-size: 410%; */
+  /* background-size: 60%; */
   font-size: 81px;
   font-weight: bold;
   background-image: url(../img/time.png);

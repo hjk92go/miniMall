@@ -1,0 +1,99 @@
+.container {
+  padding-top: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  /* margin-top: 5%; */
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.create {
+  display: flex;
+  flex-direction: column;
+}
+.notice1 {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.notice2 {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.notice3 {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.create > .createtitle {
+  font-size: x-large;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.member {
+  font-size: x-large;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.notcreate {
+  display: flex;
+  flex-direction: column;
+}
+.id {
+  margin-top: 3%;
+  height: 40px;
+}
+.pass {
+  height: 40px;
+  margin-top: 3%;
+}
+.loginbtn {
+  border: 1px solid rgba(0, 0, 0, 0.144);
+
+  /* margin-top: 5.5%; */
+  margin-top: 3.5%;
+  height: 40px;
+  justify-content: end;
+}
+.createbtn {
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  margin-top: 2%;
+  height: 40px;
+}
+.notCreatebtn {
+  border: 1px solid rgba(0, 0, 0, 0.144);
+
+  margin-top: 2%;
+  height: 40px;
+}
+.notCreatebtn:hover {
+  background-color: rgba(0, 0, 0, 0.836);
+  color: white;
+}
+
+.createbtn:hover {
+  background-color: rgba(0, 0, 0, 0.836);
+  color: white;
+}
+
+.loginbtn:hover {
+  background-color: rgba(0, 0, 0, 0.836);
+  color: white;
+}

@@ -1,0 +1,14 @@
+.showbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.productimg {
+  /* display: flex;
+  justify-content: space-between; */
+  height: 250px;
+  width: 300px;
+}
+.imgbox {
+  grid-row: 1fr 1fr 1fr;
+}
