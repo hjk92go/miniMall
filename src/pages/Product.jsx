@@ -8,14 +8,16 @@ const Product = () => {
   return (
     <div className={styles.showbox}>
       <div>
-        <div>Perfume</div>
+        <div className={styles.title}>Perfume</div>
       </div>
-      <div>
+      <div className={styles.category}>
         <div>All</div>
         <div>Men</div>
-        <div>WoMen</div>
+        <div>Women</div>
+        <div>
+          <div>Search</div>
+        </div>
       </div>
-      <div>Search</div>
       <div className={styles.imgbox}>
         {goods.map((product) => (
           <div className={styles.product}>
@@ -29,7 +31,7 @@ const Product = () => {
               [&nbsp;{product.brand}&nbsp;] {product.name}
               &nbsp;{product.size[0]}
             </div>
-            <div>{product.price1}</div>
+            <div className={styles.price}>{product.price1}</div>
           </div>
         ))}
       </div>

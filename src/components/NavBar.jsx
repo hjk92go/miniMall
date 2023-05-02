@@ -5,6 +5,7 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
+  const user = localStorage.getItem("uid");
   return (
     <div>
       <div className={styles.bar}>
@@ -22,7 +23,15 @@ const NavBar = () => {
             />
           </Link>
         </div>
-        <FontAwesomeIcon className={styles.cartIcon} icon={faUser} />
+        {user ? (
+          <Link to="mypage">
+            <FontAwesomeIcon className={styles.cartIcon} icon={faUser} />
+          </Link>
+        ) : (
+          <Link to="login">
+            <FontAwesomeIcon className={styles.cartIcon} icon={faUser} />
+          </Link>
+        )}
       </div>
       <Outlet />
     </div>

@@ -8,6 +8,7 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Product from "./pages/Product";
 import CreateId from "./pages/CreateId";
+import MyPage from "./pages/MyPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="product" element={<Product />}></Route>
             <Route path="login" element={<Login />}></Route>
             <Route path="createid" element={<CreateId />}></Route>
+            <Route path="mypage" element={<MyPage />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

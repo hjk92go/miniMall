@@ -9,7 +9,6 @@ const CreateId = () => {
           <br />
           정보를 입력해주세요.
         </h2>
-
         <label className={styles.email1} for="name">
           * 이메일
           <br />
@@ -48,7 +47,6 @@ const CreateId = () => {
           <br />
           <br />{" "}
         </label>
-
         <label className={styles.choice}>
           <input
             className={styles.women}
