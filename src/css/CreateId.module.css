@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 15%;
+}
+
+.wrapped {
+  border-radius: 25px;
+  border: 1px solid grey;
+  height: 80%;
+  width: 30%;
+  margin: 12% auto;
+}
+
+.joinbtn {
+  margin-top: 5%;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  color: rgba(0, 0, 0, 0.712);
+}
+.joinbtn:hover {
+  background-color: rgba(0, 0, 0, 0.836);
+  color: white;
+}
+
+input {
+  border: none;
+  width: 400px;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+label {
+  color: lightgrey;
+}
+
+.email1 {
+  margin-top: 5%;
+} /*
+.email2 {
+  width: 400px;
+}
+.name2 {
+  width: 400px;
+}
+.checkpass2 {
+  width: 400px;
+}
+.repass2 {
+  width: 400px;
+}*/
+.choice {
+  color: black;
+}
+.ok {
+  color: black;
+}
+.men {
+  width: 10px;
+}
+.women {
+  width: 10px;
+}
+.box {
+  width: 10px;
+}

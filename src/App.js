@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Product from "./pages/Product";
+import CreateId from "./pages/CreateId";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="cart" element={<Cart />}></Route>
             <Route path="product" element={<Product />}></Route>
             <Route path="login" element={<Login />}></Route>
+            <Route path="createid" element={<CreateId />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

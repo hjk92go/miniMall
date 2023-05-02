@@ -1,4 +1,5 @@
 import styles from "../css/Login.module.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -28,7 +29,9 @@ const Login = () => {
           <div className={styles.notice1}>
             <span>아직 회원이 아니신가요?</span>
             <span>회원가입을 하시면 편리하게 이용하실 수 있습니다.</span>
-            <button className={styles.createbtn}>회원가입</button>
+            <Link to="/createid">
+              <button className={styles.createbtn}>회원가입</button>
+            </Link>
           </div>
         </div>
         <div className={styles.notcreate}>

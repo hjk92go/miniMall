@@ -72,10 +72,11 @@
   height: 40px;
   justify-content: end;
 }
-.createbtn {
+a > .createbtn {
   border: 1px solid rgba(0, 0, 0, 0.144);
   margin-top: 2%;
   height: 40px;
+  width: 350px;
 }
 .notCreatebtn {
   border: 1px solid rgba(0, 0, 0, 0.144);
@@ -88,7 +89,7 @@
   color: white;
 }
 
-.createbtn:hover {
+a > .createbtn:hover {
   background-color: rgba(0, 0, 0, 0.836);
   color: white;
 }
