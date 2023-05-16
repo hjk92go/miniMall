@@ -207,7 +207,7 @@ const initialState = [
     id: 9,
     brand: "조말론",
     name: "블랙베리 앤 베이 코롱",
-    gender: undefined,
+    gender: "all",
     size: ["50ml", "100ml"],
     sizeNprice: [
       {
@@ -232,7 +232,7 @@ const initialState = [
     id: 10,
     brand: "조말론",
     name: "라임 바질 앤 만다린 코롱",
-    gender: undefined,
+    gender: "all",
     size: ["50ml", "100ml"],
     sizeNprice: [
       {
@@ -257,7 +257,7 @@ const initialState = [
     id: 11,
     brand: "메종 프란시스 커정",
     name: "아쿠아 유니버셜 오 드 뚜왈렛",
-    gender: undefined,
+    gender: "all",
     size: ["35ml", "70ml"],
     sizeNprice: [
       {
@@ -282,7 +282,7 @@ const initialState = [
     id: 12,
     brand: "로에베",
     name: "001 맨 오 드 뚜왈렛",
-    gender: undefined,
+    gender: "all",
     size: ["50ml", "100ml"],
     sizeNprice: [
       {

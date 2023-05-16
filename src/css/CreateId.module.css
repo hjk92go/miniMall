@@ -10,6 +10,7 @@
   height: 80%;
   width: 30%;
   margin: 12% auto;
+  position: relative;
 }
 
 .joinbtn {
@@ -24,43 +25,55 @@
   color: white;
 }
 
-input {
+/* input {
   border: none;
-  width: 400px;
   border-bottom: 1px solid #cfcfcf;
-}
-
-label {
-  color: lightgrey;
-}
+  width: 70%;
+  position: absolute;
+} */
 
 .email1 {
   margin-top: 5%;
-} /*
-.email2 {
-  width: 400px;
 }
-.name2 {
-  width: 400px;
-}
-.checkpass2 {
-  width: 400px;
-}
-.repass2 {
-  width: 400px;
-}*/
-.choice {
-  color: black;
-}
+
 .ok {
   color: black;
 }
-.men {
+.ok > .agreeBox {
+  height: 15px;
   width: 10px;
 }
-.women {
+.choice > .women {
+  height: 13px;
   width: 10px;
 }
-.box {
+.choice > .men {
+  height: 13px;
   width: 10px;
+}
+
+.email2 {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  width: 70%;
+  position: absolute;
+}
+.name2 {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  width: 70%;
+  position: absolute;
+}
+
+.checkpass2 {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  width: 70%;
+  position: absolute;
+}
+.repass2 {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  width: 70%;
+  position: absolute;
 }

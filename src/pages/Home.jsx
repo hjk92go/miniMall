@@ -5,7 +5,7 @@ import styles from "../css/Home.module.css";
 const Home = () => {
   return (
     <div className={styles.main}>
-      <img src={require("../img/main02.jpg")} />
+      <img src={require("../img/main03.jpg")} />
       <CountDown />
       <ImgSlick />
     </div>

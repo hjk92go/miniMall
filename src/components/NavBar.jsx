@@ -9,29 +9,33 @@ const NavBar = () => {
   return (
     <div>
       <div className={styles.bar}>
-        <div>
-          <Link to="/">PerfumeTherapy</Link>
+        <div className={styles.wrapped}>
+          <div>
+            <Link to="/">PERFUME THERAPY</Link>
+          </div>
+          <div className={styles.other}>
+            <div>
+              <Link to="product">PRODUCT</Link>
+            </div>
+            <div>
+              <Link to="cart">
+                <FontAwesomeIcon
+                  className={styles.userIcon}
+                  icon={faCartShopping}
+                />
+              </Link>
+            </div>
+            {user ? (
+              <Link to="mypage">
+                <FontAwesomeIcon className={styles.cartIcon} icon={faUser} />
+              </Link>
+            ) : (
+              <Link to="login">
+                <FontAwesomeIcon className={styles.cartIcon} icon={faUser} />
+              </Link>
+            )}
+          </div>
         </div>
-        <div>
-          <Link to="product">Perfume</Link>
-        </div>
-        <div>
-          <Link to="cart">
-            <FontAwesomeIcon
-              className={styles.userIcon}
-              icon={faCartShopping}
-            />
-          </Link>
-        </div>
-        {user ? (
-          <Link to="mypage">
-            <FontAwesomeIcon className={styles.cartIcon} icon={faUser} />
-          </Link>
-        ) : (
-          <Link to="login">
-            <FontAwesomeIcon className={styles.cartIcon} icon={faUser} />
-          </Link>
-        )}
       </div>
       <Outlet />
     </div>

@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import styles from "../css/ProductPage.module.css";
 import { useState } from "react";
@@ -21,6 +21,13 @@ const ProductPage = () => {
   const selectBtn = (e) => {
     setGoodsPrice(e);
   };
+
+  // const dispatch = useDispatch();
+  // const sendCart = () => {
+  //   dispatch(
+
+  //   )
+  // };
 
   return (
     <div className={styles.container}>
