@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/miniMall/static/css/main.47c5bb13.css",
-    "main.js": "/miniMall/static/js/main.ca9cc19e.js",
+    "main.css": "/miniMall/static/css/main.097be9eb.css",
+    "main.js": "/miniMall/static/js/main.1a4bf772.js",
     "static/js/787.63703646.chunk.js": "/miniMall/static/js/787.63703646.chunk.js",
     "static/media/perfume006_2.jpg": "/miniMall/static/media/perfume006_2.606b738f8a60fdd5013c.jpg",
     "static/media/perfume004_2.jpg": "/miniMall/static/media/perfume004_2.f3e15a33ec8670933919.jpg",
@@ -19,6 +19,7 @@
     "static/media/perfume005_2.jpg": "/miniMall/static/media/perfume005_2.208ee4702f391a1c0213.jpg",
     "static/media/perfume003_2.jpg": "/miniMall/static/media/perfume003_2.b5fb7eaa0eb7499df156.jpg",
     "static/media/perfume009_1.jpg": "/miniMall/static/media/perfume009_1.47243b8d984c92d8fa7d.jpg",
+    "static/media/main03.jpg": "/miniMall/static/media/main03.c77b5c2284edceea8581.jpg",
     "static/media/perfume011_2.jpg": "/miniMall/static/media/perfume011_2.d9cf64a86560deba9f81.jpg",
     "static/media/perfume007_2.jpg": "/miniMall/static/media/perfume007_2.1916b04bde199bd3fb04.jpg",
     "static/media/perfume001_1.jpg": "/miniMall/static/media/perfume001_1.84be01b278c639f8f802.jpg",
@@ -36,12 +37,12 @@
     "static/media/slick.ttf": "/miniMall/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/miniMall/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/miniMall/index.html",
-    "main.47c5bb13.css.map": "/miniMall/static/css/main.47c5bb13.css.map",
-    "main.ca9cc19e.js.map": "/miniMall/static/js/main.ca9cc19e.js.map",
+    "main.097be9eb.css.map": "/miniMall/static/css/main.097be9eb.css.map",
+    "main.1a4bf772.js.map": "/miniMall/static/js/main.1a4bf772.js.map",
     "787.63703646.chunk.js.map": "/miniMall/static/js/787.63703646.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47c5bb13.css",
-    "static/js/main.ca9cc19e.js"
+    "static/css/main.097be9eb.css",
+    "static/js/main.1a4bf772.js"
   ]
 }
