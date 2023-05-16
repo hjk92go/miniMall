@@ -8,13 +8,18 @@
 
 .productimg {
   margin-top: 15%;
-  height: 430px;
-  width: 430px;
+  height: 100%;
+  width: 100%;
 }
+
 .imgbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 90px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.imgbox > div {
+  height: 30%;
+  width: 30%;
 }
 
 .category {

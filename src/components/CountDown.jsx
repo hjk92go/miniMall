@@ -74,9 +74,7 @@ const CountDown = () => {
       ) : (
         <div className={styles.set}>
           <div className={styles.count}>
-            {padhour}&nbsp;
-            {padMin}&nbsp;
-            {padSec}
+            {padhour} : {padMin} : {padSec}
           </div>
           <Link to={`/goods/5`}>
             <img

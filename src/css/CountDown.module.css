@@ -7,6 +7,7 @@
 .subTitle {
   text-align: center;
   font-size: large;
+  margin-bottom: 1%;
 }
 
 .saleimg {
@@ -26,15 +27,23 @@
 .count {
   /* font-size: 410%; */
   /* background-size: 60%; */
-  font-size: 81px;
-  font-weight: bold;
-  background-image: url(../img/time.png);
-  background-position-x: 50%;
-  background-position-y: 54%;
 
-  background-repeat: no-repeat;
-  background-size: 18.5%;
+  /* background-image: url(../img/time.png); */
+  /* background-position-x: 50%;
+  background-position-y: 54%; */
+  font-size: xxx-large;
+  font-weight: bold;
   color: white;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.782);
+  border-radius: 25px;
+  margin-bottom: 1%;
+  /* 
+  background-repeat: no-repeat;
+  background-size: 29.5%; */
 }
 .end {
   color: rgba(0, 0, 0, 0.404);
